@@ -48,15 +48,15 @@ configure_file(
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/srcs ${CMAKE_CURRENT_BINARY_DIR})
 
 #  UnicodeHelperのルール
-add_library(UnicodeHelper STATIC
+add_library(unicodeHelper STATIC
   ${SRCDIR}/text/unicodeHelper/unicodeHelper.cpp
   )
 
-add_dependencies(UnicodeHelper
+add_dependencies(unicodeHelper
   unicodeHelperOptional
   )
 
-install(TARGETS UnicodeHelper DESTINATION lib)
+install(TARGETS unicodeHelper DESTINATION lib)
 install(FILES
   ${SRCDIR}/text/unicodeHelper/unicodeHelper.h DESTINATION include/text/unicodeHelper
   )
