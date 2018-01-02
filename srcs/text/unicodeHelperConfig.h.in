@@ -1,0 +1,9 @@
+/// @file   text/unicodeHelperConfig.h.in
+/// @brief  unicodeHelperの設定ファイルのソース
+#ifndef             TEXT_UNICODE_HELPER_CONFIG_H___
+#define             TEXT_UNICODE_HELPER_CONFIG_H___
+
+#cmakedefine    UNICODE_HELPER_USE_CP932    1
+
+#endif  //  ndef    TEXT_UNICODE_HELPER_CONFIG_H___
+//  End of Source [text/unicodeHelperConfig.h.in]

@@ -41,15 +41,15 @@ set(INCDIR ${CMAKE_CURRENT_SOURCE_DIR}/srcs)
 
 #  optionの結果をbuildに反映させるためのconfigヘッダ
 configure_file(
-  ${SRCDIR}/text/unicodeHelper/unicodeHelperConfig.h.in
-  ${CMAKE_CURRENT_BINARY_DIR}/text/unicodeHelper/unicodeHelperConfig.h
+  ${SRCDIR}/text/unicodeHelperConfig.h.in
+  ${CMAKE_CURRENT_BINARY_DIR}/text/unicodeHelperConfig.h
   )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/srcs ${CMAKE_CURRENT_BINARY_DIR})
 
 #  UnicodeHelperのルール
 add_library(unicodeHelper STATIC
-  ${SRCDIR}/text/unicodeHelper/unicodeHelper.cpp
+  ${SRCDIR}/text/unicodeHelper.cpp
   )
 
 add_dependencies(unicodeHelper
@@ -58,5 +58,5 @@ add_dependencies(unicodeHelper
 
 install(TARGETS unicodeHelper DESTINATION lib)
 install(FILES
-  ${SRCDIR}/text/unicodeHelper/unicodeHelper.h DESTINATION include/text/unicodeHelper
+  ${SRCDIR}/text/unicodeHelper.h DESTINATION include/text
   )

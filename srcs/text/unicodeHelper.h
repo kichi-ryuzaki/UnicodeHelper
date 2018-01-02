@@ -1,4 +1,4 @@
-/// @file   text/unicodeHelper/unicodeHelper.h
+/// @file   text/unicodeHelper.h
 /// @brief  Unicodeのよく使うもろもろ
 #ifndef             TEXT_UNICODE_HELPER_H___
 #define             TEXT_UNICODE_HELPER_H___
@@ -72,4 +72,4 @@ UNICODEHELPER_EXTERN_C signed int   unicodeHelperConvert( unicodeHelperWriteByte
                                                           void*const                            io_arg);
 
 #endif  //  ndef    TEXT_UNICODE_HELPER_H___
-//  End of Source [text/unicodeHelper/unicodeHelper.h]
+//  End of Source [text/unicodeHelper.h]

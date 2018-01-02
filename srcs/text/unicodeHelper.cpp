@@ -1,7 +1,7 @@
-/// @file   text/unicodeHelper/unicodeHelper.cpp
+/// @file   text/unicodeHelper.cpp
 /// @brief  Unicodeのよく使うもろもろ
 #include "unicodeHelper.h"
-#include "text/unicodeHelper/unicodeHelperConfig.h"
+#include "text/unicodeHelperConfig.h"
 
 #if         defined(UNICODE_HELPER_USE_CP932)
 typedef struct {
@@ -967,4 +967,4 @@ UNICODEHELPER_EXTERN_C signed int   unicodeHelperConvert( unicodeHelperWriteByte
     }
     return  0;
 }
-//  End of Source [text/unicodeHelper/unicodeHelper.cpp]
+//  End of Source [text/unicodeHelper.cpp]
